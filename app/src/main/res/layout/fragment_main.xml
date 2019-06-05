@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:orientation="vertical"
+              tools:context=".MainActivity">
+
+    <TextView
+        android:text="@string/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48dp"
+        android:layout_gravity="center"
+        android:shadowColor="#FF999999"
+        android:shadowDy="8"
+        android:shadowDx="8"
+        android:shadowRadius="2"
+        />
+    <EditText
+        android:id="@+id/edtMessage"
+        android:hint="@string/main_edtMessage_hint"
+        android:inputType="text|textCapSentences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_gravity="center"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@mipmap/ic_add"/>
+    <ListView
+        android:id="@+id/lsvResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
